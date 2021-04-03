@@ -1,0 +1,899 @@
+@import './mixins';
+@import './font';
+.header{
+    @include box(1440px, 652px, url(./image/Background.png));
+    margin: 0 auto;
+    padding-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .menu{
+        @include box-m(900px, 50px);
+        margin: 0 auto;
+        padding-right: 42px;
+        &-button{
+            float: right;
+            background: none;
+            @include box-m(90px, 36px);
+            margin-top: -7px;
+            border: 3px solid white;
+            border-radius: 20px;
+            color: white;
+            font:{
+                family: 'MontserratRegular';
+                size: 14px;
+                weight:100;
+            }
+        }
+        &-text{
+            color: white;
+            font:{
+                family:'MontserratBold';
+                size: 20px;;
+            }
+        }
+        &-mb{
+            padding-left: 12px;
+            border:none;
+        }
+    }
+    &-text{
+        @include box-m(470px, 250px);
+        align-self: center;
+        color:white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 127px;
+
+        &-share{
+            line-height: 63px;
+            font:{
+                family: 'MontserratBold';
+                size: 52px;
+            }
+        }
+        &-find{
+            margin-top: -5px;
+            font:{
+                family:'RobotoLight';
+                size: 24px;
+            }
+        }
+        &-button{
+            @include box-m(225px, 38px);
+            background-color: #ff4e50;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            padding-left: 15px;
+            letter-spacing: 0.4px;
+            font:{
+                family:'MontserratBold';
+                size: 14px;
+            }
+        }
+    }
+}
+.first{
+    &-meet{
+        @include box-m(941px, 364px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        &-button{
+            @include box-m(180px, 40px);
+            border-radius: 40px;
+            border: 2px solid #FF4E50;
+            color: #FF4E50;
+            padding-left: 13px;
+            font:{
+                family:'MontserratBold';
+                size: 14px;
+            }
+        }
+        &-s{
+            font:{
+                family:'RobotoLight';
+                size: 14px;
+            }
+            text-align: center;
+        }
+        &-h{
+            font:{
+                family:'MontserratBold';
+                size: 14px;
+            }
+        }
+        &-text{
+            font:{
+                family:'MontserratBold';
+                size: 26px;
+            }
+            color: #444444;
+            padding-left: 5px;
+        }
+        &-people{
+            @include box-m(941px, 225px);
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bradley{
+            @include box-m(222px, 205px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-marie{
+            @include box-m(221px, 205px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-diana{
+            @include box-m(221px, 224px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-pierce{
+            @include box-m(221px, 225px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    &-content{
+        display: flex;
+        @include box-m(941px, 649px);
+        margin: 0 auto;
+        &-image{
+            @include box-m(100%, 461px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 94px;
+            &-work{
+                margin: 0 auto;
+                font:{
+                    family:'MontserratBold';
+                    size: 26px;
+                }
+            }
+            &-third{
+                height: 424px;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 39px;
+                &-first{
+                    @include box(300px,400px, url(./image/Step1image.png));
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    &-text{
+                        @include box-m(250px,160px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 22px;
+                    }
+                }
+                &-second{
+                    @include box(300px,400px, url(./image/Step1image1.png));
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    &-text{
+                        @include box-m(250px,125px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 22px;
+
+                    }
+                }
+                &-three{
+                    @include box(300px,400px, url(./image/Step1image2.png));
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    &-text{
+                        @include box-m(250px,160px);
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+.sed{
+    color: white;
+    font:{
+        family:'MontserratBold';
+        size: 24px;
+    }
+}
+.leo{
+    color: #E3E3E3;
+    font:{
+        family:'RobotoLight';
+        size: 14px;
+    }
+}
+.step{
+    @include box-m(70px, 20px);
+    background-color: #FF4E50;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    letter-spacing: 2px;
+    font:{
+        family:'MontserratRegular';
+        size: 10px;
+    }
+}
+.second{
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 92px;
+    &-content{
+        @include box-m(940px, 1290px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 98px;
+        &-h{
+            font:{
+                family:'MontserratBold';
+                size: 26px;
+            }
+        }
+        &-image{
+            @include box-m(940px, 1025px);
+            display: flex;
+            flex-wrap: wrap;
+            &-first{
+                @include box(300px, 310px, url(./image/Sport.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+            }
+            &-second{
+                @include box(300px, 310px, url(./image/Healath.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+            }
+            &-third{
+                @include box(300px, 310px, url(./image/Extreme.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &-fourth{
+                @include box(300px, 310px, url(./image/Games.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                margin-top: -34px;
+            }
+            &-fifth{
+                @include box(620px, 310px, url(./image/Culture.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -33px;
+            }
+            &-sixth{
+                @include box(620px, 310px, url(./image/CultureCopy.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+                margin-top: -37px;
+            }
+            &-seventh{
+                @include box(300px, 310px, url(./image/GamesCopy.png));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -36px;
+            }
+            &-h{
+                font:{
+                    family:'MontserratBold';
+                    size: 22px;
+                }
+                color: white;
+            }
+        }
+        &-search{
+            @include box-m(481.12px, 164px);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            &-s{
+                color: #666666;
+                padding-top: 30px;
+                font:{
+                    family:'RobotoLight';
+                    size: 18px;
+                }
+            }
+            &-input{
+                @include box-m(520px, 44px);
+                display: flex;
+                justify-content: space-around
+            }
+            &-place{
+                @include box-m(260px, 35px);
+                padding-left: 13px;
+                color: #666666;
+                font:{
+                    family:'RobotoLight';
+                    size: 14px;
+                }
+            }
+            &-button{
+                @include box-m(177px, 40px);
+                background-color: #FF4E50;
+                border-radius: 40px;
+                padding-top: 3px;
+                border:none;
+                color: white;
+                font:{
+                    family:'MontserratBold';
+                    size: 14px;
+                }
+            }
+        }
+
+    }
+}
+.footer{
+    &-content{
+        border-top: 2px solid #FF4E50;
+        padding-top: 37px;
+    @include box-m(1440px, 224px);
+    margin: 0 auto;
+    &-company{
+        @include box-m(184px, 184px);
+        line-height: 18px;
+        margin-left: 123px;
+    }
+    &-info{
+        display: flex;
+        @include box-m(944px, 186px);
+        margin: 0 auto;
+    }
+    &-h{
+        color: #FF4E50;
+       font:{
+           family:'MontserratRegular';
+           size: 16px;
+       } 
+    }
+    &-hh{
+        color: #444444;
+        font:{
+            family:'MontserratBold';
+            size: 14px;
+        }
+    }
+    &-design{
+        @include box-m(125px, 43px);
+        display: flex;
+        flex-direction: column;
+        margin-left: 281px;
+    }
+}
+}
+.ul{
+    line-height: 27px;
+    margin-top: 8px;
+}
+.hhh{
+    margin-left: 62px;
+}
+.des{
+    color: #CCCCCC;
+    padding-left: 36px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    font:{
+        family:'MontserratBold';
+        size: 10px;
+    }
+}
+.img{
+    margin-left: 7px;
+}
+@media screen and (max-width: 769px){
+    .header{
+        &-text{
+          
+            &-button{
+                letter-spacing: -0.1px;
+                padding-left: 8px;
+            }
+        }
+        width: 768px;
+        background-position-x: center;
+        .menu{
+            width: 671px;
+            padding-left: 37px;
+            
+    
+    }
+  
+    }
+    .first{
+        width: 768px;
+        &-content{
+            width: 768px;
+            height: 653px;
+            &-image{
+                &-third{
+                    width:768px;
+                    justify-content: space-around;
+                    &-first{
+                        @include box-m(236px, 400px);
+                        &-text{
+                            padding-left: 20px;
+                            height: 180px;
+                            line-height: 15px;
+                            margin-bottom: 2px;
+                            padding-bottom:11px;
+                        }
+                    }
+                    &-second{
+                        @include box-m(236px, 400px);
+                        &-text{
+                            padding-left: 4px;
+                            padding-bottom: 33px;
+                            margin-bottom: -20px;
+                            height: 130px;
+                            width: 199px;
+                            line-height: 15px;
+
+                        }
+                    }
+                    &-three{
+                        @include box-m(236px, 400px);
+                        &-text{
+                            padding-left: 20px;
+                            height: 179px;
+                            margin-bottom: 14px;
+                            line-height: 15px;
+                        }
+                    }
+                }
+                &-work{
+                    font-size: 22px;
+                }
+            }
+        }
+        &-meet{
+            width: 768px;
+            height: 606px;
+            &-text{
+                font-size: 22px;
+                padding-left: 0px;
+            }
+            &-people{
+                @include box-m(492px, 464px);
+                flex-wrap: wrap;
+            }
+            &-bradley{
+                @include box-m(236px, 200px);
+            }
+            &-marie{
+                transform: translate(-263px, 255px);
+            }
+            &-diana{
+                transform: translate(263px, -226px);
+            }
+            &-pierce{
+                transform: translate(-7px, 34px);
+                width: 225px;
+                height: 200px;
+            }
+            &-button{
+                margin-bottom: 2px;
+            }
+        }
+    }
+    .second{
+        width: 768px;
+        &-content{
+            width: 768px;
+            margin: 0px;
+            &-h{
+                font-size: 22px;
+            }
+            &-image{
+                width: 768px;
+                padding-left: 21px;
+                &-first{
+                    @include box-m(236px, 310px);
+                    background-position: -40px 0px;
+                    align-items: flex-start;
+                }
+                &-second{
+                    @include box-m(236px, 310px);
+                    background-position: -40px 0px;
+                    align-items: flex-start;
+                }
+                &-third{
+                    @include box-m(236px, 310px);
+                    background-position: -20px 0px;
+                }
+                &-fourth{
+                    @include box-m(236px, 310px);
+                    background-position: -30px 0px;
+                }
+                &-fifth{
+                    @include box-m(492px, 310px);
+                    background-position: -70px 0px;
+                }
+                &-sixth{
+                    @include box-m(492px, 310px);
+                    background-position: 0px 0px;
+                }
+                &-seventh{
+                    @include box-m(236px, 310px);
+                    background-position: 20px 0px;
+                }
+            }
+            &-search{
+                &-button{
+                    width: 173px;
+                    padding-top: 0px;
+                }
+                &-input{
+                    width: 513px;
+                }
+            }
+        }
+    }
+    .sport{
+        text-align: center;
+        width: 130px;
+        margin-top: 117px;
+        line-height: 25px;
+    }
+    .spor{
+        text-align: center;
+        width: 170px;
+        margin-top: 130px;
+        line-height: 24px;
+    }
+    .spo{
+        text-align: center;
+        width: 200px;
+        margin-top: -2px;
+        line-height: 29px;
+    }
+    .sed{
+        margin-top: 43px;
+    }
+    .leo{
+        width: 186px;
+        margin-top: 28px;
+    }
+    .sss{
+        margin-top:10px;
+    }
+    .oe{
+        margin-top: 19px;
+    }
+    .hhh{
+        margin-left: -14px;
+    }
+    .ul{
+        color: #999999;
+    }
+    .footer{
+        width: 768px;
+        &-content{
+            &-design{
+                margin-left: 106px;
+            }
+            &-company{
+                margin-left: 108px;
+            }
+            &-info{
+                width: 768px;
+            }
+            &-h{
+                padding-left: 39px;
+            }
+            width: 768px;
+            margin-top: 95px;
+        }
+    }
+}
+@media screen and (max-width: 426px){
+    .header{
+        @include box(300px, 515px, url(./image/Background1.png));
+        padding-top: 26px;
+        .menu{
+            @include box-m(0px, 150px);
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0px;
+            padding-left: 86px;
+            margin: 0px;
+            &-button{
+                transform: translate(50px, -99px);
+            }
+        }
+        .menu-mb{
+            transform: translate(-39px, -70px);
+        }
+        &-text{
+            width: 300px;
+            margin: 0px;
+            padding-top: 22px;
+            padding-left: 10px;
+            &-share{
+                line-height: 41px;
+                font-size: 30px;
+                width: 300px;
+            }
+            &-find{
+                font-size: 18px;
+                width: 245px;
+                margin-top: -74px;
+                line-height: 22px;
+            }
+            &-button{
+                width: 280px;
+                transform: translate(0px, -62px);
+            }
+        }
+    }
+    .first{
+        width: 300px;
+        height: 1827px;
+        &-content{
+            width: 300px;
+            &-image{
+                margin-top: 37px;
+                &-third{
+                    margin-top: 9px;
+                    width: 300px;
+                    flex-wrap: wrap;
+                    &-first{
+                        @include box(300px, 240px, url(./image/Step.png));
+                        margin-bottom: 10px;
+                        &-text{
+                            padding: 0px;
+                            margin-left: -12px;
+                            height: 170px;
+                        }
+                    }
+                    &-second{
+                        @include box(300px, 240px,url(./image/StepI.png));
+                        margin-bottom: 10px;
+                        &-text{
+                            width: 200px;
+                            padding: 0px;
+                            margin-left: -61px;
+                            height: 141px;
+                            padding-bottom: 23px;
+                        }
+                    }
+                    &-three{
+                        @include box(300px, 240px,url(./image/StepII.png));
+                        &-text{
+                            width: 200px;
+                            padding: 0px;
+                            margin-left: -61px;
+                            height: 141px;
+                            padding-bottom: 18px;
+                        }
+                    }
+                }
+                &-work{
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        &-meet{
+            width: 300px;
+            margin-top: 200px;
+            &-text{
+                text-align: center;
+                line-height: 27px;
+            }
+            &-people{
+                width: 300px;
+                height: 484px;
+            }
+            &-bradley{
+                width: 300px;
+            }
+            &-diana{
+                width: 300px;
+                transform: translate(0px, -186px);
+            }
+            &-marie{
+                width: 300px;
+                transform: translate(0px, 259px);
+            }
+            &-pierce{
+                width: 300px;
+                padding-top: 20px;
+                padding-left: 13px;
+            }
+            &-s{
+                width: 233px;
+            }
+            &-button{
+                padding-top: 4px;
+                width: 280px;
+                transform: translate(0px, 425px);
+            }
+        }
+    }
+    .leo{
+        width: 244px;
+        padding-bottom: 12px;
+        margin-top: 26px;
+    }
+    .sed{
+        margin-top: 46px;
+    }
+    .sss{
+        margin-top: 9px;
+    }
+    .oe{
+        margin-top: 0px;
+    }
+    .second{
+        width: 300px;
+        &-content{
+            width: 300px;
+            height: 1145px;
+            &-h{
+                text-align: center;
+                width: 200px;
+                line-height: 26px;
+            }
+            &-image{
+                width: 300px;
+                padding-top: 33px;
+                padding-left: 0px;
+                &-first{
+                   
+                }
+                &-second{
+                    background-image: url(./image/Healath1.png);
+                }
+                &-second{
+                    background-image: url(./image/Healath1.png);
+                }
+                &-third{
+                    background-image: url(./image/Extreme1.png);
+                }
+                &-fourth{
+                    background-image: url(./image/Games1.png);
+                }
+                &-fifth{
+                    background-image: url(./image/Culture1.png);
+                }
+                &-sixth{
+                    background-image: url(./image/CultureCopy1.png);
+                }
+                &-seventh{
+                    background-image: url(./image/GamesCopy1.png);
+                }
+                &-f{
+                    @include box-m(300px, 120px);
+                    background-position: center;
+                    margin: 0px;
+                    padding: 0px;
+                    border-radius: 4px;
+                    margin-bottom: 11px;
+                }
+            }
+            &-h{
+                width: 220px;
+            }
+            &-search{
+                width: 300px;
+                margin-top: 17px;
+                &-s{
+                    padding-top: 23px;
+                }
+                &-input{
+                    margin-top: 13px;
+                    width: 300px;
+                    flex-wrap: wrap;
+                }
+                &-button{
+                    margin-top: 8px;
+                    width: 280px;
+                }
+            }
+        }
+        .sport{
+            margin-top: 22px;
+        }
+        .spor{
+            margin-top: 36px;
+        }
+    }
+    .footer{
+        width: 300px;
+        margin: 0 auto;
+        &-content{
+            margin-top: 108px;
+            width: 300px;
+            padding-top: 21px;
+            &-info{
+                display: flex;
+                margin: 0;
+                padding: 0;
+                flex-direction: column;
+                width: 300px;
+            }
+            &-h{
+                padding-left: 91px;
+            }
+            &-company{
+                margin-left: 115px;
+                margin-top: 14px;
+                height: 79px;
+            }
+            &-design{
+                margin-left: 84px;
+                margin-top: 16px;
+            }
+        }
+        #ter{
+            margin-left: 17px;
+        }
+        .ul{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0px;
+            margin-left: -61px;
+            align-items: center;
+        }
+        .des{
+            padding-left: 25px;
+        }
+        li{
+            margin-right: 12px;
+        }
+        .hhh{
+            margin-left: 117px;
+        }
+    }
+
+}
